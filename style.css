@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 0.7fr 3.3fr;
+    grid-template-rows: 20% 80%;
+    height: 100vh;
+}
+
+.sidebar{
+    background:linear-gradient(rgb(79, 0, 128),rgb(145, 110, 183),rgb(140, 45, 177),rgb(45, 12, 58));
+    grid-column:1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap:5px ;
+}
+
+.sidebar>*{
+    display: flex;
+    fill: aliceblue;
+    color: aliceblue;
+}
+
+.sidebar>div>svg{
+    width: 5vw;
+    height: 5vh;
+    fill: aliceblue;
+}
+
+.sidebar>div>span{
+    align-self: center;
+    color: aliceblue;
+}
+
+.header{
+    background-color: rgb(182, 117, 223);
+    display: grid;
+    grid-template-columns:5fr 0.1fr 0.1fr 0.1fr ;
+    grid-template-rows: 1fr 2fr;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.header>div>svg{
+    height: 5vh;
+    width: 5vw;
+}
+.search{
+    display:flex;
+}
+
+input[type="search"]{
+    width: 80%;
+    height: 5vh;
+    border-radius: 20px;
+}
+
+.main-area{
+    background-color: rgba(255, 52, 52, 0.777);
+}
